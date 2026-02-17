@@ -1,0 +1,56 @@
+{
+  "kind": "build_request",
+  "title": "Add a UI button that does nothing",
+  "projectName": "Do Nothing Button",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a single-page UI that displays one clearly-labeled button; clicking/tapping the button must intentionally perform no action (no navigation, no state change, no network calls, no console logging, no alerts/toasts).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "make a button that does nothing"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page renders a visible button with English label text.",
+        "Clicking the button does not change any visible UI state and does not trigger any side effects (no route changes, no backend calls, no console output, no dialogs).",
+        "The button remains enabled and clickable."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Apply a coherent visual theme across the page (colors, typography, spacing, and button styling) with a distinct style direction that fits a playful 'minimal UI' concept; keep styling consistent across all components used.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "make a button that does nothing"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The UI uses a consistent color palette and typography choices (not the default unstyled look).",
+        "The button styling matches the overall theme and has clear hover/focus states.",
+        "All user-facing text is in English."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/components/ui (compose existing UI components instead).",
+    "Do not add any backend canisters or external services; keep the app within the single-actor backend architecture if backend code exists (no backend changes required for this request)."
+  ],
+  "nonGoals": [
+    "Adding button functionality (saving data, navigation, API calls, toasts, alerts, analytics, logging).",
+    "User authentication or any Internet Identity flows."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-single-page-ui-that-displays-one-clearly-labeled-button-clicking-tapping-the-button-must-intentionally-perform-no-action-no-navigation-no-state-change-no-network-calls-no-console-logging-no-alerts-toasts",
+      "featureTitle": "Create a single-page UI that displays one clearly-labeled button; clicking/tapping the button must intentionally perform no action (no navigation, no state change, no network calls, no console logging, no alerts/toasts).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/main.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-coherent-visual-theme-across-the-page-colors-typography-spacing-and-button-styling-with-a-distinct-style-direction-that-fits-a-playful-minimal-ui-concept-keep-styling-consistent-across-all-components-used",
+      "featureTitle": "Apply a coherent visual theme across the page (colors, typography, spacing, and button styling) with a distinct style direction that fits a playful 'minimal UI' concept; keep styling consistent across all components used.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

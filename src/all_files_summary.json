@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Defines an empty Motoko actor with no methods or state.",
+  "feature_evidence.json": "Lists feature evidence linking UI files and components to requirements REQ-1 and REQ-2.",
+  "frontend-file-summaries.txt": "Provides short human-written summaries for key frontend files.",
+  "frontend/index.css": "Defines Tailwind layers and a set of color and layout CSS variables for light and dark themes.",
+  "frontend/index.html": "HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "React component rendering a themed page with a centered non-functional button plus header and footer.",
+  "frontend/src/hooks/useActor.ts": "Hook creating and managing a backend actor based on the user's identity and invalidating dependent queries.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity context, login/logout helpers, and identity loading via AuthClient.",
+  "frontend/src/index.css": "Tailwind base styles defining a warm playful OKLCH color palette for light and dark modes.",
+  "frontend/src/main.tsx": "Application entry mounting React with QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme tokens, colors, typography, animations, and container settings.",
+  "project_state.json": "Describes current project state, features, and pending requests for the Do Nothing Button app."
+}

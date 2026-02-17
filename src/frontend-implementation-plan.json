@@ -1,0 +1,54 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Do Nothing Button — single-page themed UI",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Implement a single-page UI with one clearly labeled button that intentionally performs no action when clicked.",
+      "acceptanceCriteria": [
+        "The page renders a visible button with English label text.",
+        "Clicking the button does not change any visible UI state and does not trigger any side effects (no route changes, no backend calls, no console output, no dialogs).",
+        "The button remains enabled and clickable."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the single-page App view that renders one clearly-labeled English button centered on the page; use the shadcn-ui Button component to provide a consistent accessible button without adding any click side effects (omit onClick or use an empty handler with no side effects). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/main.tsx",
+          "operation": "modify",
+          "description": "Ensure the app renders the new single-page App component only, with no added navigation/routing and no additional providers that could introduce side effects for the button interaction."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Apply a playful minimal visual theme with consistent colors, typography, spacing, and button hover/focus styling across the page.",
+      "acceptanceCriteria": [
+        "The UI uses a consistent color palette and typography choices (not the default unstyled look).",
+        "The button styling matches the overall theme and has clear hover/focus states.",
+        "All user-facing text is in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add global theme styling (playful minimal palette via CSS variables, base typography, background, spacing defaults, and focus-visible treatment) to ensure a coherent look across the single page."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Align Tailwind theme tokens to the playful minimal direction (e.g., ensure color tokens and radius values support the intended look) so component styling remains consistent across the app."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply consistent layout/typography/spacing classes so the page matches the global theme and the shadcn-ui Button hover/focus states feel cohesive. Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

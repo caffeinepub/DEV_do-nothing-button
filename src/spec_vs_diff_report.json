@@ -1,0 +1,63 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-17T09:23:41.105Z",
+  "summary": "REQ-1 and REQ-2 appear implemented via a single-page App with a labeled Button component and custom Tailwind-based theme tokens. However, the diff also introduces unrequested authentication/actor infrastructure, a backend actor file, and an external attribution link.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Internet Identity authentication context/provider and related login/logout infrastructure",
+      "reason": "BuildRequest explicitly lists authentication/Internet Identity flows as non-goals, and the core request only asks for a do-nothing button UI.",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts"
+      ]
+    },
+    {
+      "description": "Backend canister/actor added (empty Motoko actor)",
+      "reason": "Constraints state no backend changes are required; the request is purely frontend UI.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Actor creation/querying via react-query and identity-dependent actor recreation",
+      "reason": "Not requested; introduces backend interaction scaffolding beyond the do-nothing button UI.",
+      "evidence": [
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/main.tsx"
+      ]
+    },
+    {
+      "description": "Footer attribution with external link to caffeine.ai and dynamic window.location hostname usage",
+      "reason": "Not requested by BuildRequest; also introduces an external outbound link/service reference outside the minimal button UI scope.",
+      "evidence": [
+        "frontend/src/App.tsx"
+      ]
+    },
+    {
+      "description": "Additional global CSS file at frontend/index.css with a different/default token palette alongside frontend/src/index.css",
+      "reason": "Not requested and may conflict with the requirement for a coherent, consistent theme by introducing two different sets of design tokens.",
+      "evidence": [
+        "frontend/src/index.css",
+        "frontend/index.css"
+      ]
+    }
+  ],
+  "confidence": 0.72,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

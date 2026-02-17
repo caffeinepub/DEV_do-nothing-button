@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Project to create a UI with a button that performs no action when clicked.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-ui-that-displays-one-clearly-labeled-button-clicking-tapping-the-button-must-intentionally-perform-no-action-no-navigation-no-state-change-no-network-calls-no-console-logging-no-alerts-toasts",
+      "title": "Create a single-page UI that displays one clearly-labeled button; clicking/tapping the button must intentionally perform no action (no navigation, no state change, no network calls, no console logging, no alerts/toasts).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-visual-theme-across-the-page-colors-typography-spacing-and-button-styling-with-a-distinct-style-direction-that-fits-a-playful-minimal-ui-concept-keep-styling-consistent-across-all-components-used",
+      "title": "Apply a coherent visual theme across the page (colors, typography, spacing, and button styling) with a distinct style direction that fits a playful 'minimal UI' concept; keep styling consistent across all components used.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Add a button UI element that does nothing when pressed/clicked.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Do Nothing Button",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

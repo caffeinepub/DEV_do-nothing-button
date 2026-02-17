@@ -1,0 +1,5 @@
+{
+  "frontend/src/App.tsx": "Single-page application displaying a centered button with playful copy that intentionally performs no action when clicked, includes header and footer with proper attribution.",
+  "frontend/src/index.css": "Global styles with a warm, playful OKLCH color palette (oranges and warm neutrals) for both light and dark modes, avoiding generic purple/blue AI aesthetics.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with custom color tokens, border radius, and typography settings to support the playful minimal design system."
+}
